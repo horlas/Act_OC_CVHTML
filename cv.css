@@ -1,0 +1,339 @@
+/*Mise en page de mon CV - Activité HTML5 - Semaine 4 */
+
+@font-face {
+    font-family: 'sf_arch_rival';
+    src: url('police/SF_Arch_Rival_Extended-webfont.eot');
+    src: url('police/SF_Arch_Rival_Extended-webfont.eot?#iefix') format('embedded-opentype'),
+         url('police/SF_Arch_Rival_Extended-webfont.woff2') format('woff2'),
+         url('police/SF_Arch_Rival_Extended-webfont.woff') format('woff'),
+         url('police/SF_Arch_Rival_Extended-webfont.ttf') format('truetype'),
+         url('police/SF_Arch_Rival_Extended-webfont.svg#sf_arch_rival_extendedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+strong
+{
+	font-weight: normal;
+	color: #760001;
+}
+
+body
+{
+	
+		font-family: "Trebuchet MS",arial , sans-serif;
+		display: flex;
+		flex-direction: row-reverse;
+		margin: auto;
+		width: auto;
+}
+
+@media all and (max-width: 1024px)
+{
+	body
+	{
+		display: block;
+		width: auto;
+	}
+}	
+
+
+#bloc_page
+
+{
+	
+    background: #abece2;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+
+#redimensionnez
+{
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    color: white;
+    background-color: black;
+}
+
+/*header*/
+
+header
+{
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	padding: 20px;
+}
+
+.element:nth-child(2)
+{
+    flex: 1;
+}
+
+header h1, h2
+{
+	font-family: sf_arch_rival;
+	font-weight: normal;
+	text-align: center;
+}
+
+header h2
+{
+	font-size: 0.8em;
+}
+
+.photo
+{
+	border-radius: 20px;
+    box-shadow: 4px 4px 6px black;
+    
+}
+
+@media all and (max-width: 1024px)
+{
+    header
+    {
+       	display: block;
+        text-align: center;
+    }
+}
+
+
+/*section*/
+
+
+section
+{
+	display: flex;
+	font-size: 0.8em;
+}
+
+section ul
+{
+	list-style-image: url("images/ico_liensexterne.png");
+}
+
+section li
+{
+margin-top: 10px;
+}
+
+section h2
+{
+	font-family: sf_arch_rival;
+	font-size: 1.5em;
+}
+
+section h3
+{
+	font-size: 1em;	
+}
+
+@media all and (max-width: 1024px)
+{
+    section
+    {
+     display: block;
+	text-align: center;
+	width: auto;
+	}
+
+    section #experience
+    {
+    	
+    	width: auto;
+		text-align: justify;
+    }
+
+    section #competences
+    {
+
+    	width: auto;
+		text-align: justify;
+	}
+
+	section #formation
+	{
+
+    	width: auto;
+		text-align: justify;
+	}
+}
+
+#experience, #competences, #formation
+{
+	text-align: justify;
+	width: 50%;
+	border: 2px #760001 dotted;
+	border-radius: 20px;
+	padding: 0 10px 0 10px;
+	margin-right: 10px;
+}
+
+/*footer*/
+
+.parent
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+.enfant
+{
+	width: 50%;
+	padding: 0 40px 0 60px;
+	align-items: flex-start;
+	padding: 20px;
+}
+
+footer h3
+{
+	font-family: sf_arch_rival;
+	font-weight: normal;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+footer p, a
+{
+	font-size: 0.8em;
+	margin: 2px;
+}
+
+#liste
+{
+	display: flex;
+	flex-direction: row;
+}
+#liste ul
+{
+	list-style-image: url("images/ico_liensexterne.png");
+	margin: 0px;
+}
+
+#liste li
+{
+	margin-top: -3px;
+	font-size: 0.8em;
+}
+
+footer a
+{
+		text-decoration: none;
+		color: #760001;
+}
+
+@media all and (max-width: 1024px)
+{
+	footer
+	{
+		display: block;
+        text-align: justify;
+
+        width: auto;
+		margin: auto;
+		height: auto;
+
+	}
+}	
+
+
+
+/*aside*/
+
+aside
+{
+	display: flex;	
+	flex-direction: column;
+	justify-content: space-around;
+	background: url("images/fond_essai.jpg") repeat fixed; 
+	border: 1px black dotted;
+	border-radius: 20px;
+	width: 200px;
+	height: 1000px; 
+	padding: 0 5px 0 5px;
+	color: white;
+	text-align: center;
+}	
+	
+#mail, #linkedin, a
+{
+	text-decoration: none;
+	color: white;
+	font-size: 1em;
+}
+
+aside img
+{
+	width: 30%;
+}
+
+
+/*lorsque la largeur est plus petite que 1024px*/
+
+@media all and (max-width: 1024px)
+{
+	aside
+	{
+		background: none;
+		background-color: grey;
+
+		width: auto;
+		margin: auto;
+		height: auto; 
+
+		display: flex;
+		flex-direction: row;
+
+	}
+
+	aside img
+	{
+		display: none;
+	}
+}
+
+
+/*lorsque la largeur est plus petite que 640px*/
+
+@media all and (max-width: 640px)
+{
+	aside
+	{
+		background: none;
+		background-color: grey;
+
+		width: auto;
+		margin: auto;
+		height: auto; 
+
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	aside img
+	{
+		display: none;
+	}
+
+	.parent /*footer centres d'intérêts*/
+	{
+	display: block;
+	text-align: center;
+	width: auto;
+	}
+
+	.enfant
+	{
+		width: auto;
+		text-align: justify;
+	}
+}
+
